@@ -1,0 +1,58 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: prometheus-operator
+
+spec:
+  replicas: 1
+
+  template:
+    spec:
+      serviceAccountName: prometheus-operator
+
+      securityContext:
+        fsGroup: 2000
+
+      containers:
+        - name: server
+          image: prometheus-operator
+          imagePullPolicy: IfNotPresent
+
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+
+          args:
+            - --cluster-domain=cluster.local
+            - --web.enable-tls=true
+            - --web.cert-file=/usr/local/certificates/tls.crt
+            - --web.key-file=/usr/local/certificates/tls.key
+            - --web.listen-address=:8443
+            - --web.tls-min-version=VersionTLS13
+
+          ports:
+            - name: webhook
+              containerPort: 8443
+              protocol: TCP
+
+          resources:
+            requests:
+              cpu: "0.1"
+              memory: "64Mi"
+            limits:
+              cpu: "0.5"
+              memory: "512Mi"
+
+          volumeMounts:
+            - name: webhook
+              mountPath: /usr/local/certificates/
+              readOnly: true
+
+      volumes:
+        - name: webhook
+          secret:
+            secretName: prometheus-webhook
+
+...

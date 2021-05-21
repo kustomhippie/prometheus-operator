@@ -1,0 +1,24 @@
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+
+metadata:
+  name: prometheus-operator
+
+spec:
+  endpoints:
+    - port: webhook
+      scheme: https
+      interval: 30s
+      honorLabels: true
+
+      bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
+      tlsConfig:
+        insecureSkipVerify: true
+
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: prometheus-operator
+      app.kubernetes.io/component: operator
+
+...
