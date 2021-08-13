@@ -15,7 +15,7 @@ images:
     newName: quay.io/prometheus-operator/prometheus-operator
     newTag: "v0.47.1"
   - name: prometheus-certs
-    newName: docker.io/jettech/kube-webhook-certgen
+    newName: jettech/kube-webhook-certgen
     newTag: "v1.5.0"
 
 ...
