@@ -8,12 +8,8 @@ resources:
   - clusterrolebinding.yml
   - role.yml
   - rolebinding.yml
-
   - certificate.yml
   - validatingwebhook.yml
   - mutatingwebhook.yml
-
-commonLabels:
-  app.kubernetes.io/component: webhook
 
 ...

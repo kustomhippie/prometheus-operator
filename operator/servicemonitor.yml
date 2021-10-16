@@ -4,6 +4,9 @@ kind: ServiceMonitor
 
 metadata:
   name: prometheus-operator
+  labels:
+    app.kubernetes.io/name: prometheus-operator
+    app.kubernetes.io/component: operator
 
 spec:
   endpoints:

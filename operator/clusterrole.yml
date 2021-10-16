@@ -4,6 +4,9 @@ kind: ClusterRole
 
 metadata:
   name: prometheus-operator
+  labels:
+    app.kubernetes.io/name: prometheus-operator
+    app.kubernetes.io/component: operator
 
 rules:
   - apiGroups:

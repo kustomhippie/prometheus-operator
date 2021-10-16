@@ -4,6 +4,9 @@ kind: Role
 
 metadata:
   name: prometheus-webhook
+  labels:
+    app.kubernetes.io/name: prometheus-operator
+    app.kubernetes.io/component: webhook
 
 rules:
   - apiGroups:

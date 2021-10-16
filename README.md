@@ -1,7 +1,6 @@
 # prometheus-operator
 
-[![Build Status](http://drone.webhippie.de/api/badges/kustomhippie/prometheus-operator/status.svg)](http://drone.webhippie.de/kustomhippie/prometheus-operator)
-[![Join the Matrix chat at https://matrix.to/#/#webhippie:matrix.org](https://img.shields.io/badge/matrix-%23webhippie%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#webhippie:matrix.org)
+[![Kustomize Build](https://github.com/kustomhippie/prometheus-operator/workflows/build/badge.svg)](https://github.com/kustomhippie/prometheus-operator/actions?query=workflow%3Abuild) [![Linting Build](https://github.com/kustomhippie/prometheus-operator/workflows/linter/badge.svg)](https://github.com/kustomhippie/prometheus-operator/actions?query=workflow%3Alinter) [![Join the Matrix chat at https://matrix.to/#/#webhippie:matrix.org](https://img.shields.io/badge/matrix-%23webhippie%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#webhippie:matrix.org)
 
 This repository defines a [Kustomize](https://kustomize.io/) manifest which could be used by other repositories to generate a [Kubernetes](https://kubernetes.io/) manifest for the installation of [prometheus-operator](https://github.com/prometheus-operator/prometheus-operator).
 

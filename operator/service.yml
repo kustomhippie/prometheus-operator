@@ -4,8 +4,15 @@ kind: Service
 
 metadata:
   name: prometheus-operator
+  labels:
+    app.kubernetes.io/name: prometheus-operator
+    app.kubernetes.io/component: operator
 
 spec:
+  selector:
+    app.kubernetes.io/name: prometheus-operator
+    app.kubernetes.io/component: operator
+
   ports:
     - name: webhook
       port: 443
