@@ -9,7 +9,7 @@ resources:
   - role.yml
   - rolebinding.yml
   - certificate.yml
-  - validatingwebhook.yml
-  - mutatingwebhook.yml
+  # - validatingwebhook.yml
+  # - mutatingwebhook.yml
 
 ...
