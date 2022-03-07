@@ -13,6 +13,6 @@ images:
     newTag: "v0.47.1"
   - name: prometheus-certs
     newName: jettech/kube-webhook-certgen
-    newTag: "v1.5.0"
+    newTag: "v1.5.2"
 
 ...
