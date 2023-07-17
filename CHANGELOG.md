@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.0](https://github.com/kustomhippie/prometheus-operator/compare/v1.1.0...v2.0.0) (2023-07-17)
+
+
+### Features
+
+* **major:** update actionhippie/kustomize action to v2 ([89b955c](https://github.com/kustomhippie/prometheus-operator/commit/89b955c870942adde52d3a840cb2e953a5ca9344))
+
 ## [1.1.0](https://github.com/kustomhippie/prometheus-operator/compare/v1.0.0...v1.1.0) (2023-06-19)
 
 ## 1.0.0 (2023-06-05)
