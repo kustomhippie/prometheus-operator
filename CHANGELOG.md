@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/kustomhippie/prometheus-operator/compare/v2.0.0...v2.1.0) (2023-08-07)
+
+
+### Features
+
+* **minor:** update quay.io/prometheus-operator/prometheus-operator docker tag to v0.67.0 ([c7fc05a](https://github.com/kustomhippie/prometheus-operator/commit/c7fc05a8c05fd1472286822ea60cbd091fc950b0))
+
+
+### Bugfixes
+
+* **patch:** update quay.io/prometheus-operator/prometheus-operator docker tag to v0.67.1 ([657d367](https://github.com/kustomhippie/prometheus-operator/commit/657d3670cf853c90025028f9612e189f1ab5e8a8))
+
 ## [2.0.0](https://github.com/kustomhippie/prometheus-operator/compare/v1.1.0...v2.0.0) (2023-07-17)
 
 
